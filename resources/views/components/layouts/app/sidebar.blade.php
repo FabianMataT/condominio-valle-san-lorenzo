@@ -80,7 +80,7 @@
                     'permission' => 'administrators.index',
                     'name' => 'Administrativos',
                     'icon' => 'user-group',
-                    'route' => 'dashboard',
+                    'route' => 'users.administrators.index',
                 ],
                 [
                     'permission' => 'residents.index',

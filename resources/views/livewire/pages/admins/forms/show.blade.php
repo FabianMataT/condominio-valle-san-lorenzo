@@ -33,7 +33,7 @@
         <div class="col-span-1">
             <div class="rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow">
                 <img 
-                    src="{{ $form->image_src ?? $form->img_url }}" 
+                    src="{{ $form->image_src ?? $form->createdBy->name }}" 
                     class="w-full h-64 object-cover"
                 >
             </div>
@@ -44,7 +44,7 @@
             <x-mary-card title="{{ __('Información del Formulario') }}" shadow separator>
                 
                 <p class="text-gray-700 dark:text-gray-300 text-sm">
-                    {{ $form->description ?? __('Sin descripción') }}
+                    {{ $form->createdBy->name ?? __('Sin descripción') }}
                 </p>
 
                 <div class="flex items-center gap-3 mt-4">
