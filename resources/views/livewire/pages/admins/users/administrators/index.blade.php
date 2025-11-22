@@ -1,5 +1,5 @@
 <div>
-    <x-mary-header title="Administradores" subtitle="Lista usuarios" separator class="dark:text-white">
+    <x-mary-header title="Administradores Ejemplo de push" subtitle="Lista usuarios" separator class="dark:text-white">
         <x-slot:middle class="!justify-end">
             <x-mary-input icon="o-bolt" placeholder="Buscar..." wire:model.live.debounce="search" />
         </x-slot:middle>
